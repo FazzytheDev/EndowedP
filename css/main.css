@@ -82,7 +82,7 @@ html {
     display: none;
   }
   .site-header{
-    background: #fff;
+    background: #f3f3f3;
     width: 100%;
     min-height: 10vh;
 }
@@ -91,8 +91,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 1% 4%;
-    background-color: #fff;
-
+    background-color: white;
 }
 #logo{
     width: 120px;
@@ -121,13 +120,13 @@ html {
     text-decoration: none;
 }
 .video-container{
-    display: flex;
+    display: block;
     min-height: 40vh;
     width: 100%;
     padding: 0px 0px 100px;
 }
 .video-container video{
-    width: 90%;
+    width: 100%;
     height: 50%;
     margin: 0 auto;
 }
@@ -185,15 +184,15 @@ html {
 .about-text{
     flex-basis: 70% ;
 }
+#demo{
+    font-family:medium;
+    font-weight: 300;
+    font-size: 1.575rem;
+    line-height: 1.6;
+    margin: 2rem 0;
+}
 .about-img{
     flex-basis: 20%;
-}
-.about-text h2{
-    font-family: regular;
-    line-height: 2.0;
-    text-align: justify;
-    font-size: 1.875rem;
-    margin: 2rem 0;
 }
 .about-text a{
     background-color: black;
@@ -227,15 +226,17 @@ html {
 }
 .images{
     padding: 1% 4%;
-  
 }
 .row{
     width: 100%;
     display: flex;
+    align-items: center;
+    margin: 0 auto;
     justify-content: space-between;
 }
 .feature{
-    flex-basis: 30.3%;
+    flex-basis: 31.3%;
+    margin: 0 auto;
 }
 .feature img{
     width: 100%;
@@ -300,7 +301,7 @@ html {
     font-family: thin;
 }
 @media (max-width:700px) {
-    #email{  
+     #email{  
         width: 50%;
     }
     #join{
@@ -311,8 +312,8 @@ html {
     display: block;
    }
    .feature{
-    width: 90%;
-    margin: 1.5rem auto;
+    width: 100%;
+    margin: 1.5rem 0;
    }
     .first #cap, .second span, .third span, .fourth span{
         font-size: 3.5rem;
@@ -366,7 +367,6 @@ html {
     .responsive-header #cancelButton{
         border: 0;
         background: none;
-        color:black;
         cursor: pointer;
         font-size: 3.0rem;
         font-family: light;
@@ -390,7 +390,7 @@ html {
         text-decoration: underline;
         }
         .video-container{
-            display: flex;
+            display: block;
             min-height: 30vh;
             width: 100%;
             padding: 0px 0px 100px;
