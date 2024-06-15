@@ -23,7 +23,7 @@ cancelButton.addEventListener('click', () =>{
 });
 
 var i = 0;
-var txt = 'ENDOWED P is a visionary media production agency, empowering storytellers with a passion for cinematic excellence. With extensive expertise in cinematography, videography, video editing, and drone coverage, our creative team brings stories to life with captivating visual narratives, elevating your message and leaving a lasting impact.';
+var txt = 'ENDOWED P is a visionary media production agency, empowering storytellers with a passion for cinematic excellence with extensive expertise in filmmaking, the EP creative team illuminates your stories from concept development to post-production.';
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
