@@ -236,7 +236,7 @@ html {
     flex-basis: 30.3%;
 }
 .feature img{
-    width: 100%;
+    width: 80%;
 }
 .site-footer{
     width: 100%;
@@ -309,7 +309,7 @@ html {
     display: block;
    }
    .feature{
-    width: 100%;
+    width: 90%;
     margin: 1.5rem 0;
    }
     .first #cap, .second span, .third span, .fourth span{
