@@ -82,7 +82,7 @@ html {
     display: none;
   }
   .site-header{
-    background: #f3f3f3;
+    background: white;
     width: 100%;
     min-height: 10vh;
 }
