@@ -188,7 +188,7 @@ html {
     flex-basis: 20%;
 }
 .about-text h2{
-    font-family: thin;
+    font-family: regular;
     line-height: 2.0;
     text-align: justify;
     font-size: 1.875rem;
