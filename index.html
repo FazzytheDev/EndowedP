@@ -21,13 +21,11 @@
                     </ul>
                 </div>
                 <a href="index.html">
-              
                     <img src="./images/enlarged-pic.png" id="logo" alt="">
                 </a>
                 <div class="nav-links" id="navLinks">
                     <ul>
                         <li><a href="about.html">About</a></li>
-                       
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -38,7 +36,7 @@
                 </div>
                 <div class="responsive-navbar" id="responsivenavlinks">
                     <div class="responsive-header">
-                        <img src="./images/enlarged-pic.png" width="100px" alt="">
+                        <img src="/./images/enlarged-pic.png" width="100px" alt="">
                         <button id="cancelButton">&times;</button>
                     </div>
                     <div class="responsive-navlinks">
@@ -49,50 +47,47 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                </div>    
+                </div>
             </nav>
         </header>
         <section class="text-container">
             <div class="first">
-               <span id="cap">
-                Capturing
-               </span>
-                
+                <span id="cap">Capturing</span>
             </div>
             <div class="second">
-               <span>
-                Your
-               </span>
-               
+                <span>Your</span>
             </div>
             <div class="third">
-                <span>
-                    Timeless
-                </span>
+                <span>Timeless</span>
             </div>
             <div class="fourth">
-                <span>
-                    Moments
-                </span>
+                <span>Moments</span>
             </div>
         </section>
         <section class="video-container">
-            <video autoplay loop id="background-video">
-                <source src="./images/header.mp4" type="video/mp4">
-            </video>
-         
+          <style>
+            #video-placeholder{
+                width: 92%;
+                padding: 1% 4%;
+            }
+          </style>
+            <div id="video-placeholder" class="video-container">
+                <img src="./images/header.jpg" width="100%" style="margin: 0 auto;" alt="Video Thumbnail">
+                <button id="play-button" style="background: none; cursor: pointer; border: none;"><img src="./images/play.svg" width="50px" alt=""></button>
+            </div>
         </section>
         <section class="about-container">
             <div class="about">
                 <div class="about-text">
                     <h2 id="demo"></h2>
                     <a href="about.html">
-                        <img src="./images/about.svg" width="20px" alt="">
-                        About us</a>
+                        <img src="./images/about.svg" width="30px" alt=""> About
+                    </a>
                 </div>
                 <div class="about-img">
                     <img src="./images/enlarged-pic.png" width="100%" alt="">
                 </div>
+            </div>
         </section>
         <section class="portfolio-container">
             <div id="line">
@@ -100,23 +95,21 @@
             </div>
             <div class="title">
                 <h2>
-                    <img src="./images/gallery.svg" width="20px" alt="">
-                    EXPLORE OUR STORIES
+                    <img src="./images/gallery.svg" width="20px" alt=""> EXPLORE OUR STORIES
                 </h2>
             </div>
             <div class="images">
-              <div class="row">
-                <div class="feature">
-                    <img src="./images/dark.jpg" alt="">
+                <div class="row">
+                    <div class="feature">
+                        <img src="./images/dark.jpg" alt="">
+                    </div>
+                    <div class="feature">
+                        <img src="./images/1.jpg" alt="">
+                    </div>
+                    <div class="feature">
+                        <img src="./images/explore.jpg" alt="">
+                    </div>
                 </div>
-                <div class="feature">
-                    <img src="./images/1.jpg" alt="">
-                </div>
-                <div class="feature">
-                    <img src="./images/explore.jpg" alt="">
-                </div>
-              </div>
-               
             </div>
         </section>
         <footer class="site-footer">
@@ -131,16 +124,34 @@
             <div class="socials">
                 <h2>Follow</h2>
                 <ul>
-                    <li><a href=""><img src="./images/ig.svg" width="30px" alt="instagram"></a></li>
-                    <li><a href=""><img src="./images/yt.svg" alt="youtube" width="30px"></a></li>
-                    <li><a href=""><img src="./images/snap.svg" alt="snapchat" width="30px"></a></li>
-                   
+                    <li><a href=""><img src="/./images/ig.svg" width="30px" alt="instagram"></a></li>
+                    <li><a href=""><img src="/./images/yt.svg" alt="youtube" width="30px"></a></li>
+                    <li><a href=""><img src="/./images/snap.svg" alt="snapchat" width="30px"></a></li>
                 </ul>
             </div>
         </footer>
-      
     </div>
-    
+
+    <!-- JavaScript placed at the end of the body for optimal loading -->
+    <script src="./js/main.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            const placeholder = document.getElementById('video-placeholder');
+            const playButton = document.getElementById('play-button');
+            playButton.addEventListener('click', function() {
+                const video = document.createElement('video');
+                video.setAttribute('autoplay', true);
+                video.setAttribute('loop', true);
+                video.setAttribute('muted', true);
+                video.setAttribute('id', 'background-video');
+                const source = document.createElement('source');
+                source.setAttribute('src', './images/header.mp4');
+                source.setAttribute('type', 'video/mp4');
+                video.appendChild(source);
+                placeholder.innerHTML = '';
+                placeholder.appendChild(video);
+            });
+        });
+    </script>
 </body>
-<script src="./js/main.js"></script>
 </html>
