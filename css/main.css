@@ -82,7 +82,7 @@ html {
     display: none;
   }
   .site-header{
-    background: #f3f3f3;
+    background: #fff;
     width: 100%;
     min-height: 10vh;
 }
@@ -91,6 +91,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 1% 4%;
+    background-color: #fff;
 
 }
 #logo{
