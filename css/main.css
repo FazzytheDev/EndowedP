@@ -226,6 +226,7 @@ html {
 }
 .images{
     padding: 1% 4%;
+    width: 92%;
 }
 .row{
     width: 100%;
@@ -236,7 +237,7 @@ html {
     flex-basis: 30.3%;
 }
 .feature img{
-    width: 80%;
+    width: 100%;
 }
 .site-footer{
     width: 100%;
