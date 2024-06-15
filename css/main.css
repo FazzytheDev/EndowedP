@@ -311,7 +311,7 @@ html {
    }
    .feature{
     width: 90%;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
    }
     .first #cap, .second span, .third span, .fourth span{
         font-size: 3.5rem;
